@@ -8,18 +8,23 @@ import {
 import {
   Login,
   LandingOne,
-  LandingTwo
+  LandingTwo,
+  LandingThree,
+
 } from './components'
 
 const routesApp = createBottomTabNavigator({
-  Market: LandingOne,
-  Dishes: LandingTwo
+  Tienda: LandingOne,
+  Platos: LandingTwo,
+  Info: LandingThree,
+  
 })
 
 
 const AppNavigator = createSwitchNavigator({
   Login: Login,
-  App: routesApp
+  App: routesApp,
+  
 });
 
 const AppContainer = createAppContainer(AppNavigator);

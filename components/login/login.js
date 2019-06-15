@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
         marginTop: 20,
         fontSize: 15,
 
-
     },
     button: {
         height: 40,
@@ -48,10 +47,10 @@ export class Login extends Component {
 
     onPressLearnMore() {
         console.log('props', this.props)
-        console.log('si uso mac!!')
         this.props.navigation.navigate('App')
     }
 
+    
     render() {
         return (
 
@@ -67,14 +66,14 @@ export class Login extends Component {
                     Login
                 </Text>
                 <TextInput style={styles.input}
-                    placeholder="Username"
+                    placeholder="Usuario"
 
                 />
                 <Text style={styles.text}>
                     Password
                 </Text>
                 <TextInput style={styles.input}
-                    placeholder="Password"
+                    placeholder="Clave"
 
                     secureTextEntry={true}
                 />
